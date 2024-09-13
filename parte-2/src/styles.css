@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+div{
+    text-align: center;
+    position:relative;
+    border: 10px;
+    justify-content: space-between;
+    margin: 10px;
+    height: 100px;
+    text-align: center;
+}
+.contenedor{
+    background-color: aliceblue;
+    height:auto;
+}
+.header{
+    background-color: rgb(185, 125, 46);
+    height: 150px;
+    align-items: center;
+}
+.logo{
+    background-color: rgb(101, 101, 224);
+    width: 200px;
+    float: left;
+}
+.buscador{
+    background-color: chartreuse;
+    width:200px;
+    float: right;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr, 2fr;
+    height: auto;
+}
+.slide-bar{
+    grid-column: 1;
+    background-color: chocolate;
+    width: 400px;
+    height: 250px;
+
+}
+.content{
+    grid-column: 2;
+    background-color: darkorange;
+    width: 700px;
+    height: 250px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: chartreuse;
+    height: auto;
+}
+.item1,.item2,.item3{
+    background-color:darkgray;
+    width: 200px;
+}
