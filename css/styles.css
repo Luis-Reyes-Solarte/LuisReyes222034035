@@ -1,0 +1,61 @@
+div{
+    border-radius: 10px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    border: 1px solid;
+}  
+.main-container{
+    background-color:rgb(22, 135, 215);
+}
+.header-container{
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 20px;
+}
+.logo-img{
+    background-color: greenyellow;
+}
+.social-container{
+    background-color: grey;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.redes{
+    background-color: grey;
+}
+.nav-container{
+    background-color: black;
+    margin: 20px;
+}
+.buttons-container{
+    background-color:rgb(30, 116, 170);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 20px;
+}
+.buttons{
+    background-color: yellow;
+    margin: 20px;
+    color: yellow;
+}
+.features-container {
+    background-color: aliceblue;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.slider-content {
+    background-color: black;
+    text-align: left;
+    height: 150px;
+    color: aliceblue;
+    margin: 20px;
+}  
+.feat {
+    background-color: black;
+    color: aliceblue;
+    margin: 40px;
+}
