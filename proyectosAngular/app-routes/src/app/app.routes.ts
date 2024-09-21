@@ -10,7 +10,7 @@ export const routes: Routes = [
         component: HomePageComponent
     },
     {
-        path:'auth', //mostrar la pagina completa de autenticacion
+        path:'Auth', //mostrar la pagina completa de autenticacion
         component: AuthPageComponent
     },
     {
