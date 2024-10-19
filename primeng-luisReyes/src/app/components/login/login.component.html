@@ -1,4 +1,4 @@
-<form>
+<form [formGroup] = 'loginForm'>
     <div class="card flex justify-content-center">
         <p-card header="Simple Card"  card [style]="{width:'360px'}">
             <div class="field">
@@ -9,6 +9,20 @@
                 class="w-full"
                 name="usuario"
                 placeholder="nombre de usuario"
+                />
+            </div>
+        </p-card>
+    </div>
+    <div class="card flex justify-content-center">
+        <p-card header="Simple Card"  card [style]="{width:'360px'}">
+            <div class="field">
+                <input 
+                type="text"
+                pInputText
+                formControlName = 'password'
+                class="w-full"
+                name="password"
+                placeholder="contraseña"
                 />
             </div>
         </p-card>
