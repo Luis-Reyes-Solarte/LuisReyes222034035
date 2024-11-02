@@ -1,1 +1,25 @@
-<p>parte2 works!</p>
+<div class="p-fluid">
+    <form [formGroup]="userForm2">
+
+        <div class="field">
+            <label for="nombre_gerente">Nombre del gerente: </label>
+            <i class="pi pi-user"></i>
+            <input id="nombre_gerente" type="text" pInputText formControlName="nombre_gerente" class="w-full"/>
+            <div *ngIf="userForm2.controls['nombre_gerente'].invalid && userForm2.controls['nombre_gerente'].touched" class="error">
+                El nombre del gerente es requerido
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="email_gerente">Correo electrónico del gerente: </label>
+            <i class="pi pi-envelope"></i>
+            <input id="email_gerente" 
+            type="text" 
+            pInputText formControlName="email_gerente" 
+            class="w-full" />
+            <div *ngIf="userForm2.controls['email_gerente'].invalid && userForm2.controls['email_gerente'].touched" class="error">
+                El correo del gerente es requerido
+            </div>
+        </div>
+    </form>
+</div>

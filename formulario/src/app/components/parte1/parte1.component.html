@@ -3,6 +3,7 @@
 
         <div class="field">
             <label for="nombre">Primer nombre: </label>
+            <i class="pi pi-user"></i>
             <input id="nombre" type="text" pInputText formControlName="nombre" class="w-full"/>
             <div *ngIf="userForm.controls['nombre'].invalid && userForm.controls['nombre'].touched" class="error">
                 El nombre es requerido
@@ -11,6 +12,7 @@
 
         <div class="field">
             <label for="apellido">Primer apellido: </label>
+            <i class="pi pi-user"></i>
             <input id="apellido" 
             type="text" 
             pInputText formControlName="apellido" 
@@ -22,6 +24,7 @@
 
         <div class="field">
             <label for="email">Correo Electrónico: </label>
+            <i class="pi pi-envelope"></i>
             <input id="email" 
             type="text" 
             pInputText formControlName="email" 
@@ -30,5 +33,18 @@
                 El Correo es requerido
             </div>
         </div>
+
+        <div class="field">
+            <label for="telefono">Teléfono: </label>
+            <i class="pi pi-phone"></i>
+            <input id="telefono" 
+            type="text" 
+            pInputText formControlName="telefono" 
+            class="w-full"/>
+            <div *ngIf="userForm.controls['telefono'].invalid && userForm.controls['telefono'].touched" class="error">
+                El télefono es requerido
+            </div>
+        </div>
+        
     </form>
 </div>
