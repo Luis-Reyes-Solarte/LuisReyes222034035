@@ -11,7 +11,7 @@ import { LoginService } from '../../services/login.service';
   selector: 'app-login-test',
   standalone: true,
   imports: [ReactiveFormsModule,InputTextModule,ButtonModule,
-    PasswordModule,CommonModule,HttpClient], //modulos requeridos para el trabajo con formularios
+    PasswordModule,CommonModule], //modulos requeridos para el trabajo con formularios
   templateUrl: './login-test.component.html',
   styleUrl: './login-test.component.css'
 })
@@ -29,6 +29,9 @@ export class LoginTestComponent {
 
   onSubmit(){
     if(this.userForm.valid){
+      const {email,password} = this.userForm.value;
+      this.loginService.login(email,password).subscribe(Response => console.log());
+      //se pasa los datos al servicio
       console.log(this.userForm.value);
     }else{
       console.log('formulario invalido')

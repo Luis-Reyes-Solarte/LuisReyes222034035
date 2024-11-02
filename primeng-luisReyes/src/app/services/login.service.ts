@@ -18,5 +18,12 @@ export class LoginService {
     //metodo post envia
     //" ` " es la que se usa para que tome un valor que le enviemos en su url, junto al simbolo de "$"
   }
-}
+  register(username: String, password: String):Observable<any>{
+    const body = {username,password};
 
+    return this.http.post(`${this.apiUrl}/register`,{username,password})
+    //post necesita la url base y los datos
+    //metodo post envia
+    //" ` " es la que se usa para que tome un valor que le enviemos en su url, junto al simbolo de "$"
+  }
+}
