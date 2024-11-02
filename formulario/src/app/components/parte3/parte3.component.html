@@ -8,5 +8,31 @@
         </div>
     </div>
 
-    
+    <div class="field">
+        <label for="calendario1">Fecha de inicio: </label>
+        <i class="pi pi-id-card"></i>
+        <p-calendar id="calendario1" 
+        formControlName="calendario1"
+        [showIcon]="true" 
+        [showOnFocus]="false" 
+        inputId="buttondisplay"
+    />
+        <div *ngIf="userForm3.controls['calendario1'].invalid && userForm3.controls['calendario1'].touched" class="error">
+            La fecha de inicio es requerida
+        </div>
+    </div>
+
+    <div class="field">
+        <label for="calendario1">Fecha fin: </label>
+        <i class="pi pi-id-card"></i>
+        <p-calendar id="calendario2" 
+        formControlName="calendario2"
+        [showIcon]="true" 
+        [showOnFocus]="false" 
+        inputId="buttondisplay"
+    />
+        <div *ngIf="userForm3.controls['calendario2'].invalid && userForm3.controls['calendario2'].touched" class="error">
+            La fecha de fin es requerida
+        </div>
+    </div>
 </div>
