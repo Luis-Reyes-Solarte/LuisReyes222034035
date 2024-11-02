@@ -1,1 +1,12 @@
-<p>parte3 works!</p>
+<div class="p-fluid">
+    <div class="field">
+        <label for="identificacion">Numero de identificacion: </label>
+        <i class="pi pi-id-card"></i>
+        <input id="identificacion" type="text" pInputText formControlName="identificacion" class="w-full"/>
+        <div *ngIf="userForm3.controls['identificacion'].invalid && userForm3.controls['identificacion'].touched" class="error">
+            La identificacion es requerido
+        </div>
+    </div>
+
+    
+</div>
