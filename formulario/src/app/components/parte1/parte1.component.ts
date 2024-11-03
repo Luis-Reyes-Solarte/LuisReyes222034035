@@ -6,7 +6,8 @@ import { ButtonModule } from 'primeng/button';
 @Component({
   selector: 'app-parte1',
   standalone: true,
-  imports: [CommonModule,ReactiveFormsModule,ButtonModule],
+  imports: [CommonModule,ReactiveFormsModule,
+    ButtonModule],
   templateUrl: './parte1.component.html',
   styleUrl: './parte1.component.css'
 })
