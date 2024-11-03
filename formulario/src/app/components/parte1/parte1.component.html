@@ -1,50 +1,63 @@
 <div class="p-fluid">
-    <form [formGroup]="userForm">
+    <form [formGroup]="userForm" (ngSubmit)="onsubmit()">
         <h1 class="titulo">Formulario de Prueba</h1>
-        <div class="field">
-            <label for="nombre">Primer nombre: </label>
-            <i class="pi pi-user"></i>
-            <input id="nombre" type="text" pInputText formControlName="nombre" class="w-full"/>
-            <div *ngIf="userForm.controls['nombre'].invalid && userForm.controls['nombre'].touched" class="error">
-                El nombre es requerido
+        <div class="f1">
+            <div class="field">
+                <label for="nombre">Primer nombre: </label>
+                <i class="pi pi-user"></i>
+                <input id="nombre" type="text" pInputText formControlName="nombre" class="w-full"/>
+                <div *ngIf="userForm.controls['nombre'].invalid && userForm.controls['nombre'].touched" class="error">
+                    El nombre es requerido
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="apellido">Primer apellido: </label>
+                <i class="pi pi-user"></i>
+                <input id="apellido" 
+                type="text" 
+                pInputText formControlName="apellido" 
+                class="w-full"/>
+                <div *ngIf="userForm.controls['apellido'].invalid && userForm.controls['apellido'].touched" class="error">
+                    El apellido es requerido
+                </div>
             </div>
         </div>
 
-        <div class="field">
-            <label for="apellido">Primer apellido: </label>
-            <i class="pi pi-user"></i>
-            <input id="apellido" 
-            type="text" 
-            pInputText formControlName="apellido" 
-            class="w-full"/>
-            <div *ngIf="userForm.controls['apellido'].invalid && userForm.controls['apellido'].touched" class="error">
-                El apellido es requerido
-            </div>
-        </div>
+        <div class="f1">
 
-        <div class="field">
-            <label for="email">Correo Electrónico: </label>
-            <i class="pi pi-envelope"></i>
-            <input id="email" 
-            type="text" 
-            pInputText formControlName="email" 
-            class="w-full"/>
-            <div *ngIf="userForm.controls['email'].invalid && userForm.controls['email'].touched" class="error">
-                El Correo es requerido
+            <div class="field">
+                <label for="email">Correo Electrónico: </label>
+                <i class="pi pi-address-book"></i>
+                <input id="email" 
+                type="text" 
+                pInputText formControlName="email" 
+                class="w-full"/>
+                <div *ngIf="userForm.controls['email'].invalid && userForm.controls['email'].touched" class="error">
+                    El Correo es requerido
+                </div>
             </div>
-        </div>
 
-        <div class="field">
-            <label for="telefono">Teléfono: </label>
-            <i class="pi pi-phone"></i>
-            <input id="telefono" 
-            type="text" 
-            pInputText formControlName="telefono" 
-            class="w-full"/>
-            <div *ngIf="userForm.controls['telefono'].invalid && userForm.controls['telefono'].touched" class="error">
-                El télefono es requerido
+            <div class="field">
+                <label for="telefono">Teléfono: </label>
+                <i class="pi pi-phone"></i>
+                <input id="telefono" 
+                type="text" 
+                pInputText formControlName="telefono" 
+                class="w-full"/>
+                <div *ngIf="userForm.controls['telefono'].invalid && userForm.controls['telefono'].touched" class="error">
+                    El télefono es requerido
+                </div>
             </div>
         </div>
-        
+        <button 
+        pButton
+        type="submit"
+        class="w-full"
+        label="Terminado"
+        icon="pi pi-flag"
+        iconPos="right"
+        [disabled]="userForm.invalid"
+        ></button>
     </form>
 </div>

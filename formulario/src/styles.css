@@ -1,14 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
-@import "primeng/resources/themes/md-dark-deeppurple/theme.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
 @import "primeflex/primeflex.css";
 
 .error {
-    color: red;
+    color: rgb(245, 104, 104);
     font-size: 12px;
     margin-top: 5px;
 }
-label{
-    color: rgb(174, 174, 230);
+.f1{
+    display: grid;
+    grid-template-columns: auto auto;
 }

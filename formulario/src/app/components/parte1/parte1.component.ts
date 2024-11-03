@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-parte1',
   standalone: true,
-  imports: [CommonModule,ReactiveFormsModule],
+  imports: [CommonModule,ReactiveFormsModule,ButtonModule],
   templateUrl: './parte1.component.html',
   styleUrl: './parte1.component.css'
 })
@@ -18,8 +18,16 @@ export class Parte1Component {
     this.userForm = this.fb.group({
       nombre: ['',Validators.required],
       apellido: ['',Validators.required],
-      email: ['',Validators.required,Validators.email],
+      email: ['',[Validators.required,Validators.email]],
       telefono: ['',Validators.required],
     })
+  }
+
+  onsubmit(){
+    if(this.userForm.valid){
+      console.log(this.userForm.value)
+    }else{
+      console.log('valor invalido')
+    }
   }
 }
