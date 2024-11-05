@@ -1,7 +1,16 @@
-<div class="card flex justify-content-center h-full align-items-center">
+<div class="card flex justify-content-center">
     <p-card card [style]="{width:'auto'}">
-        <app-parte1 ></app-parte1>
-        <app-parte2 ></app-parte2>
-        <app-parte3 ></app-parte3>
+        <app-parte1 [userForm]="userForm"></app-parte1>
+        <app-parte2 [userForm2]="userForm2"></app-parte2>
+        <app-parte3 [userForm3]="userForm3"></app-parte3>
+        <p-button 
+        type="submit"
+        class="card flex justify-content-center"
+        label="Terminado"
+        icon="pi pi-flag"
+        iconPos="right"
+        [disabled]="userForm.invalid || userForm2.invalid || userForm3.invalid"
+        (onClick)="onsubmit()"
+    ></p-button>
     </p-card>
 </div>

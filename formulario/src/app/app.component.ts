@@ -20,4 +20,35 @@ import { ButtonModule } from 'primeng/button';
 export class AppComponent {
   title = 'formulario';
   
+  userForm: FormGroup;
+  userForm2: FormGroup;
+  userForm3: FormGroup;
+
+  constructor(private fb:FormBuilder){
+    this.userForm = this.fb.group({
+      nombre: ['',Validators.required],
+      apellido: ['',Validators.required],
+      email: ['',[Validators.required,Validators.email]],
+      telefono: ['',Validators.required],
+    });
+    this.userForm2 = this.fb.group({
+      nombre_gerente: ['',Validators.required],
+      email_gerente: ['',[Validators.required,Validators.email]],
+    });
+    this.userForm3 = this.fb.group({
+      dni: ['',Validators.required],
+      calendario1: ['',Validators.required],
+      calendario2: ['',Validators.required],
+    })
+  }
+  
+  onsubmit(){
+    if(this.userForm.valid && this.userForm2.valid && this.userForm3.valid){
+      console.log(this.userForm.value)
+      console.log(this.userForm2.value)
+      console.log(this.userForm3.value)
+    }else{
+      console.log('valor invalido')
+    }
+  }
 }

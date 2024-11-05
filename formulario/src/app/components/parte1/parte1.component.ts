@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 
@@ -13,7 +13,7 @@ import { ButtonModule } from 'primeng/button';
 })
 export class Parte1Component {
 
-  userForm: FormGroup;
+  @Input() userForm: FormGroup;
 
   constructor(private fb:FormBuilder){
     this.userForm = this.fb.group({
