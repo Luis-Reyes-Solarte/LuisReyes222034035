@@ -20,7 +20,7 @@ export class Parte1Component {
       nombre: ['',Validators.required],
       apellido: ['',Validators.required],
       email: ['',[Validators.required,Validators.email]],
-      telefono: ['',Validators.required],
+      telefono: ['',Validators.required,Validators],
     })
   }
 

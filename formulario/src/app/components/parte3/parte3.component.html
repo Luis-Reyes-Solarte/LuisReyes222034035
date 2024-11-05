@@ -5,8 +5,9 @@
             <i class="pi pi-id-card"></i>
             <input id="dni" type="text" pInputText formControlName="dni" class="w-full"/>
             <div *ngIf="userForm3.controls['dni'].invalid && userForm3.controls['dni'].touched" class="error">
-                La identificacion es requerido
+                La identificacion es requerido o no es numérica
             </div>
+            
         </div>
 
         <div class="f1">
