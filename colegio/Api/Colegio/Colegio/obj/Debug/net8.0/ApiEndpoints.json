@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "colegio.Controllers.ValuesController",
+    "Method": "GetUserByCedula",
+    "RelativePath": "api/Values/getUserByCedula/{cedula}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cedula",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "colegio.Controllers.ValuesController",
     "Method": "GetUserById",
     "RelativePath": "api/Values/getUserById/{codigo}",
     "HttpMethod": "GET",
@@ -39,22 +55,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "colegio.Controllers.ValuesController",
-    "Method": "GetUsersbyName",
-    "RelativePath": "api/Values/getUsersbyName",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "nombre",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
     "ReturnTypes": []
   },
   {

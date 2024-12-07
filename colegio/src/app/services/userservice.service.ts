@@ -45,4 +45,7 @@ getUsers (): Observable<any[]> {
 getUserById(codigo: string): Observable<any[]> {
   return this.http.get<any[]>(`${this.apiUrl}/getUserById/${codigo}`);
 }
+getUserByCedula(cedula: string): Observable<any[]> {
+  return this.http.get<any[]>(`${this.apiUrl}/getUserByCedula/${cedula}`);
+}
 }

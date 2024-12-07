@@ -16,7 +16,7 @@ export class HomeComponent {
     ngOnInit() {
         this.items = [
             {
-                label: 'Consulta',
+                label: 'Consulta por código',
                 icon: 'pi pi-search',
                 routerLink: '/consulta'
             },  
@@ -29,6 +29,11 @@ export class HomeComponent {
                 label: 'Registro',
                 icon: 'pi pi-book',
                 routerLink: '/registro'
+            },
+            {
+                label: 'Consulta por cédula',
+                icon: 'pi pi-user',
+                routerLink: '/consultacedula'
             },
         ]
     }

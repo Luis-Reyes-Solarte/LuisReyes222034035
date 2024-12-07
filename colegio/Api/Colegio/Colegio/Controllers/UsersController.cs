@@ -97,16 +97,24 @@ namespace colegio.Controllers
         return Ok(users); // Devuelve una lista si hay varios resultados.
       }
     }
-    // Obtener todos los usuarios
-    [HttpGet("getUsersbyName")]
-    public IActionResult GetUsersbyName(string nombre)
+    [HttpGet("getUserByCedula/{cedula}")]
+    public IActionResult GetUserByCedula(string cedula)
     {
       using (var connection = new SqlConnection(_connectionString))
       {
-        var sql = "SELECT * FROM estudiantes where username LIKE @Nombre + '%'";
-        var users = connection.Query<Users>(sql, new {Nombre = nombre}).ToList();
+        var sql = "SELECT * FROM estudiantes WHERE cedula = @Cedula";
+        var users = connection.Query<Users>(sql, new { Cedula = cedula }).ToList();
 
-        return users.Any() ? Ok(users) : NotFound("No users found.");
+        if (users.Count == 0)
+        {
+          return NotFound($"No se encontraron estudiantes con la cédula {cedula}.");
+        }
+        if (users.Count == 1)
+        {
+          return Ok(users.First()); // Devuelve un objeto si solo hay un resultado.
+        }
+
+        return Ok(users); // Devuelve una lista si hay varios resultados.
       }
     }
   }
