@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oRVNsZxA/+Y=",
+  "dgSpecHash": "Vz2L8mTutXA=",
   "success": true,
-  "projectFilePath": "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Colegio\\Colegio\\Colegio.csproj",
+  "projectFilePath": "A:\\trabajos\\LuisReyes222034035\\colegio\\Api\\Colegio\\Colegio\\Colegio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luis Reyes\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Luis Reyes\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Colegio\\",
+  "WorkspaceRootPath": "A:\\trabajos\\LuisReyes222034035\\colegio\\Api\\Colegio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D1E2D36-1B3D-4D9D-8FB5-F8EA721608C9}|Colegio\\Colegio.csproj|a:\\trabajos\\trabajo_cg\\colegio\\api\\colegio\\colegio\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D1E2D36-1B3D-4D9D-8FB5-F8EA721608C9}|Colegio\\Colegio.csproj|a:\\trabajos\\luisreyes222034035\\colegio\\api\\colegio\\colegio\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D1E2D36-1B3D-4D9D-8FB5-F8EA721608C9}|Colegio\\Colegio.csproj|solutionrelative:colegio\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,13 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Colegio\\Colegio\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "A:\\trabajos\\LuisReyes222034035\\colegio\\Api\\Colegio\\Colegio\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Colegio\\Controllers\\UsersController.cs",
-              "ToolTip": "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Colegio\\Colegio\\Controllers\\UsersController.cs",
+              "ToolTip": "A:\\trabajos\\LuisReyes222034035\\colegio\\Api\\Colegio\\Colegio\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Colegio\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAQwGEAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T18:10:30.181Z",
+              "WhenOpened": "2024-12-07T00:04:27.086Z",
               "EditorCaption": ""
             }
           ]

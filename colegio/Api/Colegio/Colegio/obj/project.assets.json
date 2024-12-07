@@ -2163,11 +2163,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Colegio\\Colegio\\Colegio.csproj",
+      "projectUniqueName": "A:\\trabajos\\LuisReyes222034035\\colegio\\Api\\Colegio\\Colegio\\Colegio.csproj",
       "projectName": "Colegio",
-      "projectPath": "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Colegio\\Colegio\\Colegio.csproj",
+      "projectPath": "A:\\trabajos\\LuisReyes222034035\\colegio\\Api\\Colegio\\Colegio\\Colegio.csproj",
       "packagesPath": "C:\\Users\\Luis Reyes\\.nuget\\packages\\",
-      "outputPath": "A:\\trabajos\\Trabajo_cg\\colegio\\Api\\Colegio\\Colegio\\obj\\",
+      "outputPath": "A:\\trabajos\\LuisReyes222034035\\colegio\\Api\\Colegio\\Colegio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Luis Reyes\\AppData\\Roaming\\NuGet\\NuGet.Config",

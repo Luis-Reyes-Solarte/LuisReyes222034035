@@ -43,6 +43,22 @@
   },
   {
     "ContainingType": "colegio.Controllers.ValuesController",
+    "Method": "GetUsersbyName",
+    "RelativePath": "api/Values/getUsersbyName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "colegio.Controllers.ValuesController",
     "Method": "Register",
     "RelativePath": "api/Values/register",
     "HttpMethod": "POST",
